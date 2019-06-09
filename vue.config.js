@@ -1,6 +1,7 @@
 module.exports = {
-  publicPath: '<web-bluetooth-playground>',
-  // publicPath: '/web-bluetooth-playground/',
-  // publicPath: 'web-bluetooth-playground',
-  // indexPath: '../index.html'
+  publicPath: process.env.NODE_ENV === 'production'
+  ? '/web-bluetooth-playground/'
+  : '/'
  } 
+
+ 
